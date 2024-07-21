@@ -22,6 +22,26 @@ export default function Home() {
         </div>
         
         <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-4">Featured Comparisons</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-accent text-accent-foreground rounded-lg shadow-md p-6">
+              <h3 className="text-2xl font-semibold mb-2">Top Business Credit Cards for Travel</h3>
+              <p className="mb-4">Discover cards that offer the best travel rewards and perks for your business.</p>
+              <Link href="/credit-cards">
+                <Button variant="secondary">View Comparison</Button>
+              </Link>
+            </div>
+            <div className="bg-accent text-accent-foreground rounded-lg shadow-md p-6">
+              <h3 className="text-2xl font-semibold mb-2">Best Small Business Loans</h3>
+              <p className="mb-4">Compare flexible financing options tailored for small businesses.</p>
+              <Link href="/loans">
+                <Button variant="secondary">View Comparison</Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+        
+        <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Why Choose BusinessCompare?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div>
@@ -35,6 +55,20 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-semibold mb-2">Time and Money Savings</h3>
               <p>Save valuable time and resources by finding the best solutions quickly.</p>
+            </div>
+          </div>
+        </section>
+        
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-4">What Our Users Say</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-card text-card-foreground rounded-lg shadow-md p-6">
+              <p className="italic mb-4">"BusinessCompare helped us find the perfect CRM software for our startup. The comparison tools are incredibly useful!"</p>
+              <p className="font-semibold">- Sarah J., Tech Entrepreneur</p>
+            </div>
+            <div className="bg-card text-card-foreground rounded-lg shadow-md p-6">
+              <p className="italic mb-4">"Thanks to BusinessCompare, we secured a great business loan with favorable terms. Highly recommended!"</p>
+              <p className="font-semibold">- Michael T., Small Business Owner</p>
             </div>
           </div>
         </section>
