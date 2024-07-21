@@ -1,10 +1,16 @@
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <Layout>
+      <Head>
+        <title>BusinessCompare - Compare Business Services and Software</title>
+        <meta name="description" content="Find and compare the best business loans, credit cards, HR software, and other business solutions to meet your company's needs." />
+        <meta name="keywords" content="business comparison, loans, credit cards, HR software, business software" />
+      </Head>
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-6">Compare Business Services and Software</h1>
         <p className="text-xl mb-8">Find the best solutions for your business needs</p>
